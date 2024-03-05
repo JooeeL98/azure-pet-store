@@ -1,5 +1,4 @@
-This is a sample for the  ci trigger the workflow
-
+Sample text to kick off the git hub action to build/deploy to ACR/App Service
 
 PetStoreApp is the front facing Java Spring Boot Web Application used in the Azure Pet Store Reference Guide.
 
