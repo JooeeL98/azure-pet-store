@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: jooeelazurepetstore 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jooeelazurepetstore
+  template:
+    metadata:
+      labels:
+        app: jooeelazurepetstore 
+    spec:
+      containers:
+        - name: jooeelazurepetstore 
+          image: azurepetstoreacr.azurecr.io/jooeelazurepetstore
+          ports:
+          - containerPort: 80
